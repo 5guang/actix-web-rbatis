@@ -1,0 +1,23 @@
+[package]
+name = "web_demo"
+version = "0.1.0"
+authors = ["张文光 <15701379752@163.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+# tokio = { version = "1.2.0", features = ["full"] }
+dotenv = "0.15.0"
+rbatis = { version = "1.8.79", default-features = false, features = ["mysql"] }
+#static
+lazy_static = "1.4.0"
+#log
+log = "0.4"
+fast_log = "1.3"
+#serde and json
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+chrono = { version = "0.4", features = ["serde"] }
+actix-web = "3.3"
+
